@@ -1,0 +1,65 @@
+.home {
+  background: url("https://i.postimg.cc/cCjNNd3J/photo-1532012197267-da84d127e765-ixlib-rb-1-2-1-w-1200-fit-crop-q-60-fm-jpg-crop-faces-edges-cs-tiny.jpg");
+  background-size: cover;
+  height: calc(100vh - 15vh);
+  overflow: hidden;
+  scroll-behavior: smooth;
+  padding: -2rem -3rem;
+  margin: 0 auto;
+}
+.home .text-section {
+  padding: 5rem;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+.home .text-section h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+.home .text-section p {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.link-section {
+  margin: 2rem 0;
+}
+.link-section .btn {
+  background-color: #00255a;
+  color: #fff;
+  border: 1px solid #00255a;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  border-radius: 0.8rem;
+  padding: 2rem 5rem;
+  font-size: 3rem;
+}
+.link-section .btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #00255a;
+  border: 3px solid #00255a;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 926px) {
+  .home .text-section h1 {
+    font-size: 2.5rem;
+  }
+  .home .text-section p {
+    font-size: 1.5rem;
+  }
+  .home .link-section .btn {
+    font-size: 1.5rem;
+    padding: 1rem 2.5rem;
+  }
+}

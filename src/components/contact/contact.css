@@ -1,0 +1,82 @@
+div.contact-frm {
+  width: 60%;
+  border: 2px solid #ccc;
+  margin: 0 auto;
+}
+form {
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 25px;
+}
+form h3 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2;
+}
+/* .form-group {
+  flex-direction: column;
+} */
+.form-group label {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  color: #00255a;
+}
+
+input.form-control,
+textarea.form-control {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 1rem 1.5rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+input.form-control:focus,
+textarea.form-control:focus {
+  border-bottom: 2px solid #00255a;
+}
+button.btn {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background-color: inherit;
+  color: #00255a;
+  border: 1px solid #00255a;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+button.btn:hover,
+button.btn:focus {
+  background-color: #00255a;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  div.contact-frm {
+    width: 100%;
+  }
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 900px) {
+  .form-group {
+    flex-direction: column;
+    gap: 1;
+    align-items: flex-start;
+  }
+}

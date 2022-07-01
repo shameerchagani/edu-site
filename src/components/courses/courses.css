@@ -1,0 +1,81 @@
+.card {
+  /* padding: 1rem; */
+  width: 80vw;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  margin: 2rem auto;
+  border-radius: 5px;
+}
+.card .card-head {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background-color: #00255a;
+  color: #fff;
+  padding: 0;
+}
+.card .card-head .icon i {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+.card .card-head .course-name {
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.card .card-body {
+  padding: 2rem;
+}
+.card ul {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+.card ul li {
+  list-style-type: disc;
+  font-size: 2rem;
+  word-wrap: break-word;
+}
+.card div.enroll-btn {
+  text-align: center;
+}
+.card button.btn-primary {
+  width: 60vw;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: inherit;
+  color: #00255a;
+  border: 1px solid #00255a;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  margin: 2rem 0;
+}
+.card button.btn-primary:hover {
+  background-color: #00255a;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .page-heading {
+    font-size: 3rem;
+  }
+  .card {
+    width: calc(100vw - 6rem);
+  }
+  .card ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    width: calc(100vw - 6rem);
+  }
+  .card ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
