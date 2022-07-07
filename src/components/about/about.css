@@ -1,0 +1,22 @@
+div.about-container {
+  background: #f3f3f3;
+  padding: 5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 0.8rem;
+}
+div.about-us {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  div.about-container {
+    width: 100%;
+    padding: 0.5rem;
+    padding-bottom: 3.5rem;
+  }
+  /* div.about-us {
+    width: 100%;
+    padding: 0.5rem;
+  } */
+}

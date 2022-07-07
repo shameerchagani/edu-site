@@ -1,10 +1,12 @@
 import React from "react";
 
+import "./about.css";
+
 const About = () => {
   return (
-    <>
+    <div className="about-container">
       <h2 className="page-heading">About Us</h2>
-      <div>
+      <div className="about-us">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsa quis
           accusamus, fugiat dicta autem, hic debitis quia eligendi magni rem.
@@ -42,7 +44,7 @@ const About = () => {
           Id fuga soluta excepturi ipsam culpa!
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

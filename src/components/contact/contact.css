@@ -1,10 +1,18 @@
+div.contact-container {
+  background: #f3f3f3;
+  padding: 5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 0.8rem;
+}
+
 div.contact-frm {
   width: 60%;
+  background-color: #fff;
   border: 2px solid #ccc;
   margin: 0 auto;
 }
 form {
-  padding: 2rem;
+  padding: 3.5rem;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 25px;
 }
 form h3 {
@@ -17,7 +25,7 @@ form h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2;
+  gap: 2rem;
 }
 /* .form-group {
   flex-direction: column;
@@ -39,6 +47,7 @@ textarea.form-control {
   outline: none;
   border: none;
   border-bottom: 2px solid #ccc;
+  width: 80%;
 }
 input.form-control:focus,
 textarea.form-control:focus {
@@ -64,8 +73,14 @@ button.btn:focus {
 }
 
 @media (max-width: 768px) {
+  div.contact-container {
+    padding: 5px;
+  }
   div.contact-frm {
     width: 100%;
+  }
+  form {
+    padding: 1rem;
   }
   .form-group {
     flex-direction: column;
@@ -76,7 +91,8 @@ button.btn:focus {
 @media (max-width: 900px) {
   .form-group {
     flex-direction: column;
-    gap: 1;
+    gap: 0;
     align-items: flex-start;
+    justify-content: center;
   }
 }

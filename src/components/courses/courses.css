@@ -4,6 +4,13 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   margin: 2rem auto;
   border-radius: 5px;
+  background: rgb(9, 9, 121);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 212, 255, 1) 35%,
+    rgba(9, 9, 121, 1) 100%
+  );
+  color: #fff;
 }
 .card .card-head {
   display: flex;
@@ -47,16 +54,16 @@
   border-radius: 5px;
   font-size: 2rem;
   cursor: pointer;
-  background-color: inherit;
-  color: #00255a;
-  border: 1px solid #00255a;
+  background-color: #00255a;
+  color: #fff;
+  border: 1px solid #fff;
   outline: none;
   transition: 0.3s ease-in-out;
   margin: 2rem 0;
 }
 .card button.btn-primary:hover {
-  background-color: #00255a;
-  color: #fff;
+  background-color: #ccc;
+  color: #00255a;
 }
 
 @media screen and (max-width: 768px) {
